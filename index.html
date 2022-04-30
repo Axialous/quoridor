@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Quoridor</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="jeu.js" async></script>
+    </head>
+
+    <body>
+
+        <div id="plateau">
+            <div class="grille" id="pions">
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 0})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 0})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 0})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 1})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 1})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 1})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 2})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 2})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 2})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 3})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 3})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 3})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 4})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 4})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 4})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 5})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 5})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 5})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 6})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 6})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 6})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 7})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 7})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 7})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('cellule', {x: 0, y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 1, y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 2, y: 8})" class="case"></div> <div onclick="choix('cellule', {x:3 , y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 4, y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 5, y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 6, y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 7, y: 8})" class="case"></div> <div onclick="choix('cellule', {x: 8, y: 8})" class="case"></div>
+                </div>
+            </div>
+            <div class="grille" id="murs">
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 1})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 1})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 2})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 2})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 3})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 3})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 4})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 4})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 5})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 5})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 6})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 6})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 7})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 7})" class="case"></div>
+                </div>
+                <div class="ligne">
+                    <div onclick="choix('emplacement', {x: 1, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 2, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 3, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 4, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 5, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 6, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 7, y: 8})" class="case"></div> <div onclick="choix('emplacement', {x: 8, y: 8})" class="case"></div>
+                </div>
+            </div>
+            <div class="murs">
+                <div onclick="choix('mur', 1)" class="mur" id="mur-1"></div>
+                <div onclick="choix('mur', 5)" class="mur" id="mur-5"></div>
+                <div onclick="choix('mur', 9)" class="mur" id="mur-9"></div>
+                <div onclick="choix('mur', 13)" class="mur" id="mur-13"></div>
+                <div onclick="choix('mur', 17)" class="mur" id="mur-17"></div>
+                <div onclick="choix('mur', 3)" class="mur" id="mur-3"></div>
+                <div onclick="choix('mur', 7)" class="mur" id="mur-7"></div>
+                <div onclick="choix('mur', 11)" class="mur" id="mur-11"></div>
+                <div onclick="choix('mur', 15)" class="mur" id="mur-15"></div>
+                <div onclick="choix('mur', 19)" class="mur" id="mur-19"></div>
+                <div onclick="choix('mur', 2)" class="mur" id="mur-2"></div>
+                <div onclick="choix('mur', 6)" class="mur" id="mur-6"></div>
+                <div onclick="choix('mur', 10)" class="mur" id="mur-10"></div>
+                <div onclick="choix('mur', 14)" class="mur" id="mur-14"></div>
+                <div onclick="choix('mur', 18)" class="mur" id="mur-18"></div>
+                <div onclick="choix('mur', 4)" class="mur" id="mur-4"></div>
+                <div onclick="choix('mur', 8)" class="mur" id="mur-8"></div>
+                <div onclick="choix('mur', 12)" class="mur" id="mur-12"></div>
+                <div onclick="choix('mur', 16)" class="mur" id="mur-16"></div>
+                <div onclick="choix('mur', 20)" class="mur" id="mur-20"></div>
+            </div>
+            <div class="pion" id="pion-1"></div>
+            <div class="pion" id="pion-2"></div>
+            <div class="pion" id="pion-3"></div>
+            <div class="pion" id="pion-4"></div>
+            <div onclick="choix('tourner', 90)" id="tourner"></div>
+            <div id="demarrer">
+                <div onclick="choix('joueurs', 2)" class="choix-joueurs" id="deux-joueurs">II</div>
+                <div onclick="choix('joueurs', 4)" class="choix-joueurs" id="quatre-joueurs">IV</div>
+            </div>
+        </div>
+
+        <pre id="debug"></pre>
+        
+    
+    </body>
+
+</html>

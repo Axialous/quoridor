@@ -1,0 +1,216 @@
+body>* {
+    margin: auto;
+}
+
+#plateau {
+    position: relative;
+
+    background-color: rgb(70, 18, 9);
+    border-radius: 10px;
+    
+    width: min-content;
+    
+    padding: 90px;
+}
+
+.grille {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ligne {
+    display: flex;
+}
+
+#pions .case {
+    background-color: rgb(0, 0, 0);
+    border-radius: 1px;
+
+    width: 50px;
+    height: 50px;
+
+    margin: 5px;
+
+    cursor: pointer;
+}
+
+#murs {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
+
+#murs .case {
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+
+}
+
+.mur {
+    position: absolute;
+    top: 85px;
+    left: 35px;
+
+    background-color: rgb(226, 175, 109);
+
+    width: 110px;
+    height: 10px;
+
+    cursor: pointer;
+
+    transition: 500ms;
+}
+#mur-1 {
+    transform: translate(-60px, 0px);
+}
+#mur-2 {
+    transform: translate(600px, 0px);
+}
+#mur-5 {
+    transform: translate(-60px, 60px);
+}
+#mur-6 {
+    transform: translate(600px, 60px);
+}
+#mur-9 {
+    transform: translate(-60px, 120px);
+}
+#mur-10 {
+    transform: translate(600px, 120px);
+}
+#mur-13 {
+    transform: translate(-60px, 180px);
+}
+#mur-14 {
+    transform: translate(600px, 180px);
+}
+#mur-17 {
+    transform: translate(-60px, 240px);
+}
+#mur-18 {
+    transform: translate(600px, 240px);
+}
+#mur-3 {
+    transform: translate(-60px, 300px);
+}
+#mur-4 {
+    transform: translate(600px, 300px);
+}
+#mur-7 {
+    transform: translate(-60px, 360px);
+}
+#mur-8 {
+    transform: translate(600px, 360px);
+}
+#mur-11 {
+    transform: translate(-60px, 420px);
+}
+#mur-12 {
+    transform: translate(600px, 420px);
+}
+#mur-15 {
+    transform: translate(-60px, 480px);
+}
+#mur-16 {
+    transform: translate(600px, 480px);
+}
+#mur-19 {
+    transform: translate(-60px, 540px);
+}
+#mur-20 {
+    transform: translate(600px, 540px);
+}
+
+.pion {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    border-radius: 50%;
+
+    height: 26px;
+    width: 26px;
+
+    transition: 250ms;
+}
+#pion-1 {
+    background-color: rgb(219, 210, 159);
+    border: solid 7px rgb(187, 169, 65);
+
+    transform: translate(0px, 240px);
+}
+#pion-2 {
+    background-color: rgb(108, 63, 129);
+    border: solid 7px rgb(58, 20, 75);
+    
+    transform: translate(240px, 0px);
+}
+#pion-3 {
+    background-color: rgb(236, 203, 165);
+    border: solid 7px rgb(185, 148, 105);
+
+    transform: translate(480px, 240px);
+}
+#pion-4 {
+    background-color: rgb(65, 40, 65);
+    border: solid 7px rgb(39, 9, 39);
+    
+    transform: translate(240px, 480px);
+}
+
+#demarrer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 90px;
+    width: 100%;
+}
+#tourner {
+    display: none;
+
+    position: absolute;
+    bottom: -25px;
+    left: 305px;
+
+    width: 110px;
+    height: 110px;
+
+    cursor: pointer;
+}
+
+.choix-joueurs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60px;
+    font-family: Georgia, serif;
+    color: rgb(135, 58, 138);
+
+    height: 70px;
+    width: 90px;
+
+    cursor: pointer;
+
+    transition: 250ms;
+}
+
+#deux-joueurs:hover {
+    transform: rotate(-7deg);
+
+    font-size: 80px;
+}
+
+#quatre-joueurs:hover {
+    transform: rotate(7deg);
+
+    font-size: 80px;
+}
